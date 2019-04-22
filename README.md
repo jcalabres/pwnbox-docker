@@ -1,7 +1,8 @@
 # About
-Custom box of pwnbox. A docker box with tools for binary reverse engineering and exploitation. It's primarily geared towards Capture The Flag competitions.
+Docker box with tools for binary reverse engineering.
+Based on pwnbox.
 
-# Go forth, and CTF 
+# Go forth, and Reverse Engineering!
 •_•)
 
 ( •_•)>⌐■-■
