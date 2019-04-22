@@ -39,7 +39,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 #-------------------------------------#
 # Install stuff from pip repos        #
 #-------------------------------------#
-RUN pip install \
+RUN pip install --upgrade pip \
     r2pipe 
 
 #-------------------------------------#
