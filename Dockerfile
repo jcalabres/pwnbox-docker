@@ -1,5 +1,5 @@
 FROM phusion/baseimage
-MAINTAINER syc0de
+MAINTAINER jcalabres00
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -20,8 +20,6 @@ RUN apt-get install -y \
     python-pip \
     python3-pip \
     default-jdk \
-    net-tools \
-    nasm \
     vim \
     zsh \
     git \
@@ -29,8 +27,8 @@ RUN apt-get install -y \
     ltrace \
     netcat \
     nmap \
+    net-tools \
     wget \
-    exiftool \
     unzip \
     man-db \
     manpages-dev 
@@ -43,9 +41,6 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 #-------------------------------------#
 RUN pip install \
     r2pipe 
-
-# Install pwntools 3
-RUN pip install pwntools
 
 #-------------------------------------#
 # Install stuff from GitHub repos     #
