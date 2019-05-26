@@ -54,7 +54,7 @@ RUN git clone https://github.com/radare/radare2.git /opt/radare2 && \
     make symstall
 
 # Install gef
-RUN git clone https://github.com/hugsy/gef.git /opt/gef
+RUN wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 
 # Install ohmyzsh
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
